@@ -9,16 +9,16 @@ import { IoCartOutline } from "react-icons/io5";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className='border-b-2 border-gray-200 mb-[40px]'>
       <Container>
         <div className="flex justify-between pt-[49px] pb-[21px]">        
           <div>
             <Link to="/">
-              <img src={logo} alt="" />
+              <img src={logo} alt=""/>
             </Link>
           </div> 
           <div className=' '>
-            <ul className="sm:flex sm:flex-col sm:gap-[30px] md:flex md:flex-row">
+            <ul className="esm:bg-amber-950  sm:flex sm:gap-[30px] sm:bg-amber-300">
               <li><Link to="/">Home</Link></li>
               <li><Link to="/">Contact</Link></li>
               <li><Link to="/">About</Link></li>
@@ -37,8 +37,8 @@ const Navbar = () => {
               </div>
             </div>  
             <div className="flex gap-4">
-              <div><CiHeart size={32} /></div>
-              <div><IoCartOutline size={32} /></div>
+              <div><CiHeart size={32}/></div>
+              <div><IoCartOutline size={32}/></div>
             </div>          
           </div>
         </div>
